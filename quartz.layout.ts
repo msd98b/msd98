@@ -1,3 +1,4 @@
+import { command } from "yargs"
 import { PageLayout, SharedLayout } from "./quartz/cfg"
 import * as Component from "./quartz/components"
 
@@ -21,19 +22,21 @@ export const defaultContentPageLayout: PageLayout = {
   Component.ContentMeta(),
   Component.TagList(),
   ],
-  left: [
+  right: [
   Component.DesktopOnly(Component.Graph()),
   Component.DesktopOnly(Component.Backlinks()),
   Component.MobileOnly(Component.PageTitle()),
   Component.MobileOnly(Component.Darkmode()),
   ],
-  right: [
+  left: [
   Component.DesktopOnly(Component.PageTitle()),
   Component.Search(),
+  Component.DesktopOnly(Component.ReaderMode()),
   Component.DesktopOnly(Component.Darkmode()),
   Component.DesktopOnly(Component.Explorer()),
   Component.DesktopOnly(Component.TableOfContents()),
   Component.MobileOnly(Component.Backlinks()),
+  
   ],
 }
  
