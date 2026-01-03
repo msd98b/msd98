@@ -22,14 +22,16 @@ export const defaultContentPageLayout: PageLayout = {
   Component.ContentMeta(),
   Component.TagList(),
   ],
-  left: [
+// left side infact!
+  right: [
   Component.DesktopOnly(Component.Graph()),
   Component.DesktopOnly(Component.Backlinks()),
   Component.MobileOnly(Component.PageTitle()),
   Component.MobileOnly(Component.Darkmode()),
   Component.DesktopOnly(Component.TableOfContents()),
   ],
-  right: [
+// right side infact!
+  left: [
   Component.DesktopOnly(Component.PageTitle()),
   Component.DesktopOnly(Component.Search()),
   Component.DesktopOnly(Component.ReaderMode()),
