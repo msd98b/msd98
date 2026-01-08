@@ -1,5 +1,5 @@
 # استفاده از نسخه سبک و به‌روز Node.js 🍏
-image: node:20-slim
+image: node:22-slim
 
 # تعریف فرآیند انتشار سایت
 pages:
