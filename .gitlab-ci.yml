@@ -1,0 +1,14 @@
+# استفاده از نسخه سبک و به‌روز Node.js 🍏
+image: node:20-slim
+
+# تعریف فرآیند انتشار سایت
+pages:
+  stage: deploy
+  script:
+    - npm install          # نصب تمام پیش‌نیازهای پروژه Quartz 📦
+    - npx quartz build     # تبدیل یادداشت‌های تو به فایل‌های وب 🏗️
+  artifacts:
+    paths:
+      - public             # معرفی پوشه خروجی برای آنلاین شدن 🌐
+  only:
+    - v4                   # این فرآیند فقط روی شاخه v4 اجرا شود
