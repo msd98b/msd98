@@ -12,15 +12,17 @@ const config: QuartzConfig = {
     pageTitleSuffix: "- msd98",
     enableSPA: true,
     enablePopovers: true,
-    analytics: {
-      provider: "plausible",
-    },
+    analytics: null,
+    //analytics: {
+    //  "null": 
+      //provider: "plausible",
+    //},
     locale: "fa-IR",
     baseUrl: "https://msd98b.github.io/msd98/",
     ignorePatterns: ["private", "templates", ".obsidian"],
     defaultDateType: "modified",
     theme: {
-      fontOrigin: "googleFonts",
+      fontOrigin: "local",//"googleFonts"
       cdnCaching: true,
       typography: {
         header: "Vazirmatn",
